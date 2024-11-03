@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de H&L Prime - Consejos y Guías</title>
+    <meta name="description" content="Encuentra consejos de expertos en mantenimiento, limpieza y jardinería. Ideal para propietarios de viviendas en Torrevieja, Orihuela Costa y alrededores.">
+    <meta name="keywords" content="mantenimiento, limpieza, jardinería, propiedades, consejos de hogar">
+    <style>
+        /* CSS para el blog */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+        }
+        #categories, #articles, footer {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+        #categories h2, #articles h2 {
+            color: #2c3e50;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            padding: 0.5rem 0;
+        }
+        ul li a {
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+        }
+        .article {
+            background-color: #f4f4f4;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+        }
+        .article h3 {
+            margin: 0;
+            color: #2c3e50;
+        }
+        .article p {
+            margin: 0.5rem 0;
+        }
+        .more-content {
+            display: none; /* Oculta el contenido adicional por defecto */
+            margin-top: 1rem;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+        }
+        footer nav ul {
+            display: flex;
+            justify-content: center;
+        }
+        footer nav ul li {
+            margin: 0 1rem;
+        }
+        footer nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            .article {
+                padding: 1rem;
+            }
+        }
+    </style>
+    <script>
+        // Función para mostrar/ocultar el contenido adicional
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            content.style.display = content.style.display === "block" ? "none" : "block";
+        }
+    </script>
+</head>
+<body>
+    <!-- Encabezado del Blog -->
+    <header>
+        <h1>Blog de H&L Prime</h1>
+        <p>Encuentra consejos útiles para el mantenimiento de tu hogar, limpieza y jardinería en la región de Torrevieja y Orihuela Costa.</p>
+    </header>
+
+    <!-- Categorías -->
+    <section id="categories">
+        <h2>Categorías</h2>
+        <ul>
+            <li><a href="#maintenance">Consejos de Mantenimiento</a></li>
+            <li><a href="#cleaning">Limpieza y Preparación</a></li>
+            <li><a href="#gardening">Jardinería y Espacios Exteriores</a></li>
+        </ul>
+    </section>
+
+    <!-- Artículos por Categoría -->
+    <section id="articles">
+        <h2>Artículos Destacados</h2>
+
+        <!-- Categoría: Consejos de Mantenimiento -->
+        <article id="maintenance" class="article">
+            <h3>5 Señales de Problemas de Fontanería que No Puedes Ignorar en Casa</h3>
+            <p>Una guía esencial para identificar problemas iniciales en fontanería y evitar daños mayores en tu propiedad.</p>
+            <a href="javascript:void(0);" onclick="toggleContent('content1')">Leer más</a>
+            <div id="content1" class="more-content">
+                <p>Las señales incluyen:</p>
+                <ul>
+                    <li>Goteos constantes en grifos o tuberías.</li>
+                    <li>Presión de agua inestable.</li>
+                    <li>Manchas de humedad en paredes o techos.</li>
+                    <li>Olores extraños en la casa.</li>
+                    <li>Ruidos inusuales en las tuberías.</li>
+                </ul>
+                <p>Ignorar estos síntomas puede llevar a costosas reparaciones. Mantener un seguimiento regular de tus instalaciones puede ayudarte a identificar problemas antes de que se agraven.</p>
+            </div>
+        </article>
+
+        <!-- Categoría: Limpieza y Preparación de Hogares -->
+        <article id="cleaning" class="article">
+            <h3>Checklist de Limpieza Profunda para Propietarios de Alquiler Turístico</h3>
+            <p>Una lista completa para preparar tu propiedad de alquiler y asegurar la satisfacción de los inquilinos.</p>
+            <a href="javascript:void(0);" onclick="toggleContent('content3')">Leer más</a>
+            <div id="content3" class="more-content">
+                <p>Incluye pasos como:</p>
+                <ul>
+                    <li>Limpieza de ventanas y persianas.</li>
+                    <li>Desinfección de baños y cocina.</li>
+                    <li>Revisión de electrodomésticos.</li>
+                </ul>
+                <p>Una limpieza meticulosa garantiza no solo la satisfacción del inquilino, sino también el mantenimiento del valor de tu propiedad.</p>
+            </div>
+        </article>
+
+        <!-- Categoría: Jardinería y Espacios Exteriores -->
+        <article id="gardening" class="article">
+            <h3>Las Mejores Plantas para Jardines de Bajo Mantenimiento</h3>
+            <p>Ideas para elegir plantas que embellecerán tu jardín sin requerir un alto mantenimiento.</p>
+            <a href="javascript:void(0);" onclick="toggleContent('content5')">Leer más</a>
+            <div id="content5" class="more-content">
+                <p>Considera estas opciones:</p>
+                <ul>
+                    <li>Suculentas y cactus.</li>
+                    <li>Plantas perennes resistentes.</li>
+                    <li>Hierbas aromáticas que además son útiles en la cocina.</li>
+                </ul>
+                <p>Estas plantas no solo añaden belleza, sino que también pueden ayudarte a reducir el tiempo de mantenimiento.</p>
+            </div>
+        </article>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2024 H&L Prime. Todos los derechos reservados.</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Sobre Nosotros</a></li>
+                <li><a href="services.html">Servicios</a></li>
+                <li><a href="contact.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
